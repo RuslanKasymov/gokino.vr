@@ -1,0 +1,115 @@
+﻿@font-face {
+    font-family: 'Arkhip';
+    src: url('fonts/Arkhip/Arkhip_font.eot');
+    src: url('fonts/Arkhip/Arkhip_font?#iefix') format('embedded-opentype'),
+    url('fonts/Arkhip/Arkhip_font.woff2') format('woff2'),
+    url('fonts/Arkhip/Arkhip_font.woff') format('woff'),
+    url('fonts/Arkhip/Arkhip_font.ttf') format('truetype'),
+    url('fonts/Arkhip/Arkhip_font.svg#TaurusNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Taurus';
+    src: url('fonts/TaurusBold/TaurusBold.eot');
+    src: url('fonts/TaurusBold/TaurusBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/TaurusBold/TaurusBold.woff2') format('woff2'),
+    url('fonts/TaurusBold/TaurusBold.woff') format('woff'),
+    url('fonts/TaurusBold/TaurusBold.ttf') format('truetype'),
+    url('fonts/TaurusBold/TaurusBold.svg#TaurusBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    color: #333333;
+    font-family: 'Arkhip', arial;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #1c55ff;
+}
+.content {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
+.animaite{
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.header-bg{
+    background: url("/images/header_bg.png")  top center no-repeat;
+    background-size: 100%;
+    /*height: 9rem;*/
+}
+.nav, .reg{
+    height: 4rem;
+    line-height: 4rem;
+}
+.nav a, .reg a, .f-sessions a{
+    color: #1c55ff;
+}
+.nav a:hover, .reg a:hover, .f-sessions a:hover{
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.main-banner{
+    padding: 5rem 0
+}
+.f-name{
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+}
+.f-sessions{
+    margin: 1rem 0;
+}
+/* КНОПКА */
+.btn-gk{
+    font-weight: bold;
+    color: white;
+    height: 3.125rem;
+    width: 16.25rem;
+    outline: none;
+    background: linear-gradient(0.25turn, #1c55ff, #0087d9);;
+    border: none;
+    box-shadow: 0 5px #07168e;
+    text-align: center;
+    line-height: 3.125rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn-gk:active {
+    background-color: #07168e;
+    box-shadow: 0 1px #07168e;
+    transform: translateY(4px);
+}
+/* END КНОПКА */
+.t-blue{
+    color: #1c55ff;
+}
+.t-white{
+    color: white;
+}
+.t-address{
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+ }
+.block-map{
+    height: 440px;
+}
