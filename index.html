@@ -10,7 +10,6 @@
     <title>GoKino</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-	<link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 <div class="wrapper">
@@ -49,29 +48,172 @@
 				</div>
 			</div>
         </div>
-        <div class="container">
-           <div class="row">
-			   <div class="block-map">
-				   <div class="t-blue">Мы находимся по адресу:</div>
-				   <div class="t-address">г.Омск, улица Мира 27</div>
-				   <div class="t-blue">Номер для бронирования:</div>
-				   <div class="t-white">+7(3124)84-87-88</div>
-				   <div class="t-blue">Email:</div>
-				   <div class="t-white">info@gokino.ru</div>
-				   <div class="t-blue">Время работы:</div>
-				   <div class="t-white">
-					   ПН-ЧТ: 10:00-01:00<br>
-					   ПТ-ВС: 10:00-03:00
+        <div class="container m-t_-3r">
+           <div class="row block-map ">
+			   <div class="col-5">
+				   <div class="map-content">
+					   <div class="t-blue">Мы находимся по адресу:</div>
+					   <div class="t-address">г.Омск, улица Мира 27</div>
+					   <div class="t-blue">Номер для бронирования:</div>
+					   <div class="t-white">+7(3124)84-87-88</div>
+					   <div class="t-blue">Email:</div>
+					   <div class="t-white">info@gokino.ru</div>
+					   <div class="t-blue">Время работы:</div>
+					   <div class="t-white">
+						   ПН-ЧТ: 10:00-01:00<br>
+						   ПТ-ВС: 10:00-03:00
+					   </div>
 				   </div>
-
+			   </div>
+			   <div class="col-7">
+				   <img src="images/map.png" alt="">
 			   </div>
 		   </div>
         </div>
-    </div>
-	<!-- Modal -->
-  <footer class="footer_bg">
-	
-    </footer>
+		<div class="container-fluid popular-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="title"><span class="t-blue">Популярное</span> <span class="t-white"> сейчас</span></div>
+					</div>
+					<div class="col-3">
+						<div class="film animaite">
+							<a href="">
+								<div class="film-content ">
+									<span class="t-white">Перейти к фильму</span>
+								</div>
+								<img src="/images/pop1.png" alt="f">
+							</a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="film animaite">
+							<a href="">
+								<div class="film-content ">
+									<span class="t-white">Перейти к фильму</span>
+								</div>
+								<img src="/images/pop1.png" alt="f">
+							</a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="film animaite">
+							<a href="">
+								<div class="film-content ">
+									<span class="t-white">Перейти к фильму</span>
+								</div>
+								<img src="/images/pop1.png" alt="f">
+							</a>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="film animaite">
+							<a href="">
+								<div class="film-content ">
+									<span class="t-white">Перейти к фильму</span>
+								</div>
+								<img src="/images/pop1.png" alt="f">
+							</a>
+						</div>
+					</div>
+					<div class="col-12"><a href="" class="f_r m_1"><span class="t-white">Посмотреть все</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="title"><span class="t-blue">Почему выбирают</span> <span class="t-white">именно нас?</span></div>
+				</div>
+				<div class="col-4">
+					<div class="poch">
+						<img src="images/pochemu1.png" alt="">
+						<span class="poch-text">
+							Персональный консьерж,
+							который возьмет на себя организацию
+							досуга на территории мультиплекса
+						</span>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="poch">
+						<img src="images/pochemu2.png" alt="">
+						<span class="poch-text">
+							Возможность посещать премьеры
+							и закрытые показы самых популярных
+							в мире фильмов
+						</span>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="poch">
+						<img src="images/pochemu3.png" alt="">
+						<span class="poch-text">
+							Возможность арендовать целиком
+							большие и маленькие залы, рассчитанные
+							на 7–9 человек
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid subscribe-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-8">
+					<div class="subscribe">
+						<div class="subs-title">
+							<span class="t-blue">
+								Следите за новостями
+							</span> <br>
+							<span class="t-white">оформив подписку!</span>
+						</div>
+						<div class="subs-cont">
+							<input name="email" id="email" type="text" class="inp-gk" placeholder="Ваш Email">
+							<div class="btn-gk">Подписаться</div>
+							<label for="email">Нажимая “Подписаться”, Вы подписываете <a href="">Пользовательское соглашение</a></label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer_bg t-white footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="logo-footer">
+						<img src="/images/logo-footer.png" alt="">
+					</div>
+				</div>
+				<div class="col-7 justify-content-between flex-wrap">
+					<div class="footer-top-cont justify-content-between">
+						<div class="nav nav-footer d-flex justify-content-between">
+							<span><a href="#">СЕАНСЫ</a></span>
+							<span><a href="#">О НАС</a></span>
+							<span><a href="#">КОНТАКТЫ</a></span>
+						</div>
+						<div class="social d-flex justify-content-between">
+							<a href=""><img src="images/soc-vk.png" alt="vk"></a>
+							<a href=""><img src="images/soc-fb.png" alt="fb"></a>
+							<a href=""><img src="images/soc-tw.png" alt="t"></a>
+						</div>
+					</div>
+					<div class="footer-botoom-cont">
+						<div class="footer-contacts">
+							<span>info@gokino.ru </span>
+							<span>+7(3124)84-87-88</span>
+						</div>
+						<div class="justify-content-between">
+							<span>© Кинотеатр «GoКино». Все права защищены.</span>
+							<span>Политика конфиденциальности</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </div>
 
 <script src="js/jquery.js"></script>
