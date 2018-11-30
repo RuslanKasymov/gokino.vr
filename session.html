@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="KasymovRuslan">
+    <meta name="keywords" content="ворота, откатные">
+    <meta name="description"
+          content="Кинотеатр будущего епт">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoKino</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="container-fluid header-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 col-12">
+						<div class="logo"><img src="images/logo.png" alt="logo"></div>
+					</div>
+					<div class="col-sm-6">
+						<div class="nav d-flex justify-content-around">
+							<span><a href="#">СЕАНСЫ</a></span>
+							<span><a href="#">О НАС</a></span>
+							<span><a href="#">КОНТАКТЫ</a></span>
+						</div>
+					</div>
+					<div class="col-sm-3 col-12">
+						<div class="reg d-flex justify-content-between"><a href="#" class="name">Ruslan Kasymov</a> <a href="#" class="out">Выйти</a></div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="container-fluid popular-bg p-2-0">
+			<div class="container m-2-0 ">
+				<div class="row">
+					<div class="col-12">
+						<div class="film-data">
+							<div class="film-title">Темные отражения</div>
+							<div class="film-rej">Цена билета: <span id="price">170</span></div>
+							<div class="film-descr">Время сеанса 21.12.18 16:00</div>
+						</div>
+					</div>
+				</div>
+				<div class="row block-map">
+					<div class="col-12">
+						<div class="session-reg">
+							<div class="row">
+								<div class="col-7">
+									<div class="session-room">
+										<div class="room-row">
+											<div class="row-num" data-row="6">Ряд 6</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point">2</div>
+												<div class="row-point">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+										<div class="room-row">
+											<div class="row-num" data-row="5">Ряд 5</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point blocked">2</div>
+												<div class="row-point blocked">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+										<div class="room-row">
+											<div class="row-num" data-row="4">Ряд 4</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point">2</div>
+												<div class="row-point">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+										<div class="room-row">
+											<div class="row-num" data-row="3">Ряд 3</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point">2</div>
+												<div class="row-point">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+										<div class="room-row">
+											<div class="row-num" data-row="2">Ряд 2</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point">2</div>
+												<div class="row-point">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+										<div class="room-row">
+											<div class="row-num" data-row="1">Ряд 1</div>
+											<div class="row-points">
+												<div class="row-point">1</div>
+												<div class="row-point">2</div>
+												<div class="row-point">3</div>
+												<div class="row-point">4</div>
+												<div class="row-point">5</div>
+												<div class="row-point">6</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="reg-data">
+										<div class="data-inf-inp">
+											<div class="row-point"></div>
+											<div class="row-num">Свободные</div>
+										</div>
+										<div class="data-inf-inp">
+											<div class="row-point blocked"></div>
+											<div class="row-num">Занятые</div>
+										</div>
+										<div class="data-inf-inp">
+											<div class="row-point select"></div>
+											<div class="row-num">Выбранные Вами</div>
+										</div>
+										<div class="data-inf-film">
+											Вы выбрали:<br>
+											<div id="select-points">
+												<!--   <div class="select-point" data-row="3">Ряд: <span class="select-row-num">3</span> Место: <span class="point">4,5</span></div>   -->
+
+											</div>
+
+											Сумма: <span id="sum"></span>
+										</div>
+										<div class="btn-gk">Забронировать</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <div class="container">
+           <div class="row block-map m-2-0">
+			   <div class="col-5">
+				   <div class="map-content">
+					   <div class="t-blue">Мы находимся по адресу:</div>
+					   <div class="t-address">г.Омск, улица Мира 27</div>
+					   <div class="t-blue">Номер для бронирования:</div>
+					   <div class="t-white">+7(3124)84-87-88</div>
+					   <div class="t-blue">Email:</div>
+					   <div class="t-white">info@gokino.ru</div>
+					   <div class="t-blue">Время работы:</div>
+					   <div class="t-white">
+						   ПН-ЧТ: 10:00-01:00<br>
+						   ПТ-ВС: 10:00-03:00
+					   </div>
+				   </div>
+			   </div>
+			   <div class="col-7">
+				   <img src="images/map.png" alt="">
+			   </div>
+		   </div>
+        </div>
+	</div>
+	<footer class="footer_bg t-white footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="logo-footer">
+						<img src="/images/logo-footer.png" alt="">
+					</div>
+				</div>
+				<div class="col-7 justify-content-between flex-wrap">
+					<div class="footer-top-cont justify-content-between">
+						<div class="nav nav-footer d-flex justify-content-between">
+							<span><a href="#">СЕАНСЫ</a></span>
+							<span><a href="#">О НАС</a></span>
+							<span><a href="#">КОНТАКТЫ</a></span>
+						</div>
+						<div class="social d-flex justify-content-between">
+							<a href=""><img src="images/soc-vk.png" alt="vk"></a>
+							<a href=""><img src="images/soc-fb.png" alt="fb"></a>
+							<a href=""><img src="images/soc-tw.png" alt="t"></a>
+						</div>
+					</div>
+					<div class="footer-botoom-cont">
+						<div class="footer-contacts">
+							<span>info@gokino.ru </span>
+							<span>+7(3124)84-87-88</span>
+						</div>
+						<div class="justify-content-between">
+							<span>© Кинотеатр «GoКино». Все права защищены.</span>
+							<span>Политика конфиденциальности</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

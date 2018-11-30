@@ -252,8 +252,65 @@ body {
     color: white;
     text-decoration: none;
 }
+.session-reg{
+    color: white;
 
+}
 .m-2-0{
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+.p-2-0{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.room-row{
+    justify-content: left;
+    display: flex;
+    margin-bottom: 0.8rem;
+}
+.row-num{
+    justify-content: center;
+    line-height: 43px;
+}
+.row-points{
+    width: 328px;
+    display: flex;
+    justify-content: space-between;
+}
+.row-point{
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #0087d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+}
+.blocked{
+    background-color: transparent;
+    border: 2px solid #0087d9;
+}
+.select{
+    background-color: white;
+    color: #0087d9;
+}
+.row-num{
+    display: flex;
+    width: 90px;
+}
+.data-inf-inp{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+.data-inf-inp .row-num{
+    width: 300px;
+    justify-content: left;
+    padding-left: 1rem;
+}
+.data-inf-film{
+    margin-bottom: 1rem;
 }
