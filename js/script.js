@@ -50,4 +50,18 @@ $(document).ready(function () {
            max--;
        }
    })
+    $('#btn-gk').on('click', function () {
+        let points = [];
+        $('.session-room .row-point').each(function(indx, element){
+            if ($(element).hasClass("select")){
+                let row = $(element).parent().parent().find('.row-num')[0].dataset.row;
+                points.push({
+                    value: row,
+                    label: $(element).html()
+                });
+            }
+        });
+        console.log(points);
+
+    });
 });
